@@ -20,10 +20,10 @@ class test_login:
     def test_validLogin(self):   
        self.web_page()
        email = WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located((By.NAME, "email")))
-       email.send_keys("aybuke.toksoy@gmail.com")
+       email.send_keys("aybuke@gmail.com")
        
        password = WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located((By.NAME, "password")))
-       password.send_keys("123456")
+       password.send_keys("aasfdgf")
        
        
        loginButton = WebDriverWait(self.driver,5).until(expected_conditions.visibility_of_element_located((By.XPATH, "//button[@class='btn btn-primary w-100 mt-6']")))
